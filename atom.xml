@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wsgzao.github.io/"/>
-  <updated>2016-06-02T00:43:38.562Z</updated>
+  <updated>2016-06-06T06:17:45.140Z</updated>
   <id>http://wsgzao.github.io/</id>
   
   <author>
@@ -16,28 +16,64 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git常用命令和Git使用规范指南</title>
-    <link href="http://wsgzao.github.io/post/hello-world/"/>
-    <id>http://wsgzao.github.io/post/hello-world/</id>
-    <published>2016-06-01T14:47:52.015Z</published>
-    <updated>2016-06-02T00:43:38.562Z</updated>
+    <title>hexo在github的搭建</title>
+    <link href="http://wsgzao.github.io/post/hello-world-md/"/>
+    <id>http://wsgzao.github.io/post/hello-world-md/</id>
+    <published>2016-06-02T06:27:44.000Z</published>
+    <updated>2016-06-06T06:17:45.140Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;  &quot;&gt;&lt;/a&gt;&lt;center&gt; &lt;img src=&quot;./hello-world/github.png&quot; alt=&quot;&quot;&gt; &lt;/center&gt;&lt;/h2&gt;&lt;p&gt;Git是目前世界最先进的分布式版本控制系统&lt;/p&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;在2005年的某一天，Linux之父Linus Torvalds 发布了他的又一个里程碑作品——Git。它的出现改变了软件开发流程，大大地提高了开发流畅度，直到现在仍十分流行，完全没有衰退的迹象。其实一般情况下，只需要掌握git的几个常用命令即可，但是在使用的过程中难免会遇到各种复杂的需求，这时候经常需要搜索，非常麻烦，故总结了一下自己平常会用到的git操作。本文根据团队实践记录Git入门指南和Git常用命令，文章中不仅记录了Git的搭建和使用教程，还参考了大量Git团队使用规范上的经验，希望大家可以结合自己团队的实际应用场景让Git协作优雅的落地。&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://i02.pic.sogou.com/766c7ef817aa443a&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;安装node-js&quot;&gt;&lt;a href=&quot;#安装node-js&quot; class=&quot;headerlink&quot; title=&quot;安装node.js&quot;&gt;&lt;/a&gt;安装node.js&lt;/h1&gt;&lt;p&gt;下载-安装&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./204920.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;打开Telent客户端（如果没打开会出错）&quot;&gt;&lt;a href=&quot;#打开Telent客户端（如果没打开会出错）&quot; class=&quot;headerlink&quot; title=&quot;打开Telent客户端（如果没打开会出错）&quot;&gt;&lt;/a&gt;打开Telent客户端（如果没打开会出错）&lt;/h1&gt;&lt;p&gt;如果是windowXP&lt;br&gt;输入&lt;/p&gt;
+&lt;p&gt;win7:&lt;br&gt;&lt;img src=&quot;./212607.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;xp:&lt;br&gt;在[运行]中输入”services.msc”，确定后出现[服务管理器]；&lt;br&gt;       或者在[控制面板]里进入[管理工具]，运行[服务]就会出现[服务管理器]；&lt;/p&gt;
+&lt;p&gt;在[服务管理器]中找到[Telnet] 项，按键盘的”t”-“e”-“l”键很快就能找着；&lt;/p&gt;
+&lt;p&gt;在双击后出现的[属性对话框]中[启动类型]改为[自动]或[手动]；&lt;/p&gt;
+&lt;p&gt;启动Telnet服务&lt;br&gt;  在[属性对话框]中的[服务状态]项中点击[启动]；&lt;br&gt;  在[运行]中输入”cmd”，确定后在光标提示符输入”net start telnet”回车，当屏幕显示”Telnet服务正在启动…Telnet 服务已经启动成功。”后，说明Telnet服务已经在你本机启动了。&lt;/p&gt;
+&lt;h1 id=&quot;安装git&quot;&gt;&lt;a href=&quot;#安装git&quot; class=&quot;headerlink&quot; title=&quot;安装git&quot;&gt;&lt;/a&gt;安装git&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;./213556.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;点击下一步完成即可&lt;/p&gt;
+&lt;h1 id=&quot;SSH&quot;&gt;&lt;a href=&quot;#SSH&quot; class=&quot;headerlink&quot; title=&quot;SSH&quot;&gt;&lt;/a&gt;SSH&lt;/h1&gt;&lt;p&gt;生成SSH密钥&lt;br&gt;查看是否已经有了ssh密钥：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果没有密钥则不会有此文件夹，有则备份删除&lt;/p&gt;
+&lt;p&gt;生成密钥：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -C “you@gmail.com”&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;按3个回车，密码为空。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;最后得到了两个文件：id_rsa和id_rsa.pub&lt;br&gt;&lt;img src=&quot;./090308.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开github网站&lt;br&gt;在github上添加ssh密钥，这要添加的是“id_rsa.pub”里面的公钥。&lt;/p&gt;
+&lt;p&gt;选择Settings&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./214231.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;选择 SSH and GDP keys&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./214416.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击new ssh key&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./215230.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;添加id_rsa.pub里面的公钥到key中提交即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./215346.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt; #安装插件&lt;br&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;安装HEXO&quot;&gt;&lt;a href=&quot;#安装HEXO&quot; class=&quot;headerlink&quot; title=&quot;安装HEXO&quot;&gt;&lt;/a&gt;安装HEXO&lt;/h1&gt;&lt;p&gt;官网：&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/zh-cn/&lt;/a&gt;&lt;br&gt;右击选择 Bash&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./215939.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;选择想要存放盘 cd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g//安装&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo -v//查看版本号（如果可以显示说明安装成功）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo init myblog//初始化一个博客（myblog随便取）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd myblog//选择（同上面myblog的取名）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install//初始化博客&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; hexo g//生成静态网页（输入后查看根目录是否有public文件夹，如果没有请重装）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server//开启服务器&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./220402.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在浏览器中输入：&lt;a href=&quot;http://127.0.0.1:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./220542.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;安装完成&lt;/p&gt;
+&lt;h1 id=&quot;建github库与推送&quot;&gt;&lt;a href=&quot;#建github库与推送&quot; class=&quot;headerlink&quot; title=&quot;建github库与推送&quot;&gt;&lt;/a&gt;建github库与推送&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;./221856.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;复制克隆码（一定要是SSH的）&lt;br&gt;&lt;img src=&quot;./222027.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开博客存放位置进入_config.yml（配置文件）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./222249.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;在deploy:位置输入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy://前面不能有有空格 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: git@github.com:crazezy2333/crazezy2333.github.io.git //克隆码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;推送&lt;/p&gt;
+&lt;p&gt;hexo clean//清除原静态网页&lt;/p&gt;
+&lt;p&gt;hexo generate//生成静态网页&lt;/p&gt;
+&lt;p&gt;hexo deploy//推送&lt;/p&gt;
+&lt;h1 id=&quot;完成&quot;&gt;&lt;a href=&quot;#完成&quot; class=&quot;headerlink&quot; title=&quot;完成&quot;&gt;&lt;/a&gt;完成&lt;/h1&gt;</content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;  &quot;&gt;&lt;/a&gt;&lt;center&gt; &lt;img src=&quot;./hello-world/github.png&quot; alt=&quot;&quot;&gt; &lt;/center&gt;&lt;/h2&gt;&lt;p&gt;Git是目前世界最先进的分布
+      &lt;p&gt;&lt;img src=&quot;http://i02.pic.sogou.com/766c7ef817aa443a&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;安装node-js&quot;&gt;&lt;a href=&quot;#安装node-js&quot; class=&quot;headerlink&quot; title=&quot;安装node
     
     </summary>
+    
+      <category term="tighub博客" scheme="http://wsgzao.github.io/categories/tighub%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="博客搭建" scheme="http://wsgzao.github.io/categories/tighub%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
   </entry>
