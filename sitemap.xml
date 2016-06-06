@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wsgzao.github.io/post/oop/</loc>
+    
+    <lastmod>2016-06-06T08:22:11.687Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wsgzao.github.io/post/mysql/</loc>
     
     <lastmod>2016-06-06T07:52:07.343Z</lastmod>

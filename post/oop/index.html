@@ -4,54 +4,40 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>hexo在github的搭建 | 苏少莲博客</title>
+    <title>OOP的学习 | 苏少莲博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="苏少莲">
     
 
     
-    <meta name="description" content="安装node.js下载-安装
-
-参考链接：http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html
-打开Telent客户端（如果没打开会出错）如果是windowXP输入
-win7:
-xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]；       或者在[控制面板]里进入[管理工具]，运行[服务]就会出">
+    <meta name="description" content="OOP的学习
+PDOPHP Data Object
+PDO的作用？PDO是数据抽象层，可以通过内部切换数据库的方式，而不改变其他代码来完成php连接各个数据库的功能
+DSN的概念？Data Source Name(数据源名)
+如何使用pdo连接数据库？变量 + new + PDO（DSN,’用户名’,’密码’，array(pdo属性=&amp;gt;值,pdo属性=&amp;gt;值……)[可选]）;
+使用PDO">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo在github的搭建">
-<meta property="og:url" content="http://wsgzao.github.io/post/hello-world-md/index.html">
+<meta property="og:title" content="OOP的学习">
+<meta property="og:url" content="http://wsgzao.github.io/post/oop/index.html">
 <meta property="og:site_name" content="苏少莲博客">
-<meta property="og:description" content="安装node.js下载-安装
-
-参考链接：http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html
-打开Telent客户端（如果没打开会出错）如果是windowXP输入
-win7:
-xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]；       或者在[控制面板]里进入[管理工具]，运行[服务]就会出">
-<meta property="og:image" content="http://i02.pic.sogou.com/766c7ef817aa443a">
-<meta property="og:image" content="http://wsgzao.github.io/./204920.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./212607.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./213556.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./090308.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./214231.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./214416.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./215230.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./215346.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./215939.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./220402.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./220542.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./221856.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./222027.jpg">
-<meta property="og:image" content="http://wsgzao.github.io/./222249.jpg">
-<meta property="og:updated_time" content="2016-06-06T06:17:45.140Z">
+<meta property="og:description" content="OOP的学习
+PDOPHP Data Object
+PDO的作用？PDO是数据抽象层，可以通过内部切换数据库的方式，而不改变其他代码来完成php连接各个数据库的功能
+DSN的概念？Data Source Name(数据源名)
+如何使用pdo连接数据库？变量 + new + PDO（DSN,’用户名’,’密码’，array(pdo属性=&amp;gt;值,pdo属性=&amp;gt;值……)[可选]）;
+使用PDO">
+<meta property="og:image" content="http://wsgzao.github.io/./OOP.png">
+<meta property="og:updated_time" content="2016-06-06T08:22:11.687Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo在github的搭建">
-<meta name="twitter:description" content="安装node.js下载-安装
-
-参考链接：http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html
-打开Telent客户端（如果没打开会出错）如果是windowXP输入
-win7:
-xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]；       或者在[控制面板]里进入[管理工具]，运行[服务]就会出">
-<meta name="twitter:image" content="http://i02.pic.sogou.com/766c7ef817aa443a">
+<meta name="twitter:title" content="OOP的学习">
+<meta name="twitter:description" content="OOP的学习
+PDOPHP Data Object
+PDO的作用？PDO是数据抽象层，可以通过内部切换数据库的方式，而不改变其他代码来完成php连接各个数据库的功能
+DSN的概念？Data Source Name(数据源名)
+如何使用pdo连接数据库？变量 + new + PDO（DSN,’用户名’,’密码’，array(pdo属性=&amp;gt;值,pdo属性=&amp;gt;值……)[可选]）;
+使用PDO">
+<meta name="twitter:image" content="http://wsgzao.github.io/./OOP.png">
 <meta name="twitter:creator" content="@Sunshine">
 
     
@@ -114,7 +100,7 @@ xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]； 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/hello-world-md/" title="hexo在github的搭建" itemprop="url">hexo在github的搭建</a>
+      <a href="/post/oop/" title="OOP的学习" itemprop="url">OOP的学习</a>
   </h1>
   <p class="article-author">By
        
@@ -130,58 +116,36 @@ xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]； 
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装node-js"><span class="toc-number">1.</span> <span class="toc-text">安装node.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打开Telent客户端（如果没打开会出错）"><span class="toc-number">2.</span> <span class="toc-text">打开Telent客户端（如果没打开会出错）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装git"><span class="toc-number">3.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SSH"><span class="toc-number">4.</span> <span class="toc-text">SSH</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装HEXO"><span class="toc-number">5.</span> <span class="toc-text">安装HEXO</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#建github库与推送"><span class="toc-number">6.</span> <span class="toc-text">建github库与推送</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#完成"><span class="toc-number">7.</span> <span class="toc-text">完成</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OOP的学习"><span class="toc-number">1.</span> <span class="toc-text">OOP的学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PDO"><span class="toc-number">2.</span> <span class="toc-text">PDO</span></a></li></ol>
 		
 		</div>
 		
-		<p><img src="http://i02.pic.sogou.com/766c7ef817aa443a" alt=""></p>
-<h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><p>下载-安装</p>
-<p><img src="./204920.jpg" alt=""></p>
-<p>参考链接：<br><a href="http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html" target="_blank" rel="external">http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html</a></p>
-<h1 id="打开Telent客户端（如果没打开会出错）"><a href="#打开Telent客户端（如果没打开会出错）" class="headerlink" title="打开Telent客户端（如果没打开会出错）"></a>打开Telent客户端（如果没打开会出错）</h1><p>如果是windowXP<br>输入</p>
-<p>win7:<br><img src="./212607.jpg" alt=""></p>
-<p>xp:<br>在[运行]中输入”services.msc”，确定后出现[服务管理器]；<br>       或者在[控制面板]里进入[管理工具]，运行[服务]就会出现[服务管理器]；</p>
-<p>在[服务管理器]中找到[Telnet] 项，按键盘的”t”-“e”-“l”键很快就能找着；</p>
-<p>在双击后出现的[属性对话框]中[启动类型]改为[自动]或[手动]；</p>
-<p>启动Telnet服务<br>  在[属性对话框]中的[服务状态]项中点击[启动]；<br>  在[运行]中输入”cmd”，确定后在光标提示符输入”net start telnet”回车，当屏幕显示”Telnet服务正在启动…Telnet 服务已经启动成功。”后，说明Telnet服务已经在你本机启动了。</p>
-<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><p><img src="./213556.jpg" alt=""><br>点击下一步完成即可</p>
-<h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><p>生成SSH密钥<br>查看是否已经有了ssh密钥：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure></p>
-<p>如果没有密钥则不会有此文件夹，有则备份删除</p>
-<p>生成密钥：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C “you@gmail.com”</span><br><span class="line">按3个回车，密码为空。</span><br></pre></td></tr></table></figure></p>
-<p>最后得到了两个文件：id_rsa和id_rsa.pub<br><img src="./090308.jpg" alt=""></p>
-<p>打开github网站<br>在github上添加ssh密钥，这要添加的是“id_rsa.pub”里面的公钥。</p>
-<p>选择Settings</p>
-<p><img src="./214231.jpg" alt=""></p>
-<p>选择 SSH and GDP keys</p>
-<p><img src="./214416.jpg" alt=""></p>
-<p>点击new ssh key</p>
-<p><img src="./215230.jpg" alt=""></p>
-<p>添加id_rsa.pub里面的公钥到key中提交即可</p>
-<p><img src="./215346.jpg" alt=""></p>
-<p> #安装插件<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h1><p>官网：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a><br>右击选择 Bash</p>
-<p><img src="./215939.jpg" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">选择想要存放盘 cd</span><br><span class="line"> </span><br><span class="line">npm install hexo-cli -g//安装</span><br><span class="line"></span><br><span class="line">hexo -v//查看版本号（如果可以显示说明安装成功）</span><br><span class="line"></span><br><span class="line">hexo init myblog//初始化一个博客（myblog随便取）</span><br><span class="line"></span><br><span class="line">cd myblog//选择（同上面myblog的取名）</span><br><span class="line"></span><br><span class="line">npm install//初始化博客</span><br><span class="line"></span><br><span class="line"> hexo g//生成静态网页（输入后查看根目录是否有public文件夹，如果没有请重装）</span><br><span class="line"></span><br><span class="line">hexo server//开启服务器</span><br></pre></td></tr></table></figure></p>
-<p><img src="./220402.jpg" alt=""></p>
-<p>在浏览器中输入：<a href="http://127.0.0.1:4000/" target="_blank" rel="external">http://127.0.0.1:4000/</a></p>
-<p><img src="./220542.jpg" alt=""></p>
-<p>安装完成</p>
-<h1 id="建github库与推送"><a href="#建github库与推送" class="headerlink" title="建github库与推送"></a>建github库与推送</h1><p><img src="./221856.jpg" alt=""></p>
-<p>复制克隆码（一定要是SSH的）<br><img src="./222027.jpg" alt=""></p>
-<p>打开博客存放位置进入_config.yml（配置文件）</p>
-<p><img src="./222249.jpg" alt=""><br>在deploy:位置输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy://前面不能有有空格 </span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:crazezy2333/crazezy2333.github.io.git //克隆码</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>推送</p>
-<p>hexo clean//清除原静态网页</p>
-<p>hexo generate//生成静态网页</p>
-<p>hexo deploy//推送</p>
-<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1>  
+		<h1 id="OOP的学习"><a href="#OOP的学习" class="headerlink" title="OOP的学习"></a>OOP的学习</h1><p><img src="./OOP.png" alt=""></p>
+<h1 id="PDO"><a href="#PDO" class="headerlink" title="PDO"></a>PDO</h1><p>PHP Data Object</p>
+<p>PDO的作用？<br>PDO是数据抽象层，可以通过内部切换数据库的方式，而不改变其他代码来完成php连接各个数据库的功能</p>
+<p>DSN的概念？<br>Data Source Name(数据源名)</p>
+<p>如何使用pdo连接数据库？<br>变量 + new + PDO（DSN,’用户名’,’密码’，array(pdo属性=&gt;值,pdo属性=&gt;值……)[可选]）;</p>
+<p>使用PDO连接数据库的时候要用try{}catch(){}的方式</p>
+<p>在PDO中获取和设置特定的属性都需要通过pdo中的系统函数来实现<br>1.获取<br>getAttribute(‘常量名称’);<br>2.设置<br>3.setAttribute(‘常量名称’,’修改值’);</p>
+<p>PDO的错误处理方式<br>通过抛异常的方式去处理</p>
+<p>报错的信息通过getMessage()来显示</p>
+<p>通过PDO操作数据库数据的方法<br>1.非结果集  exec(要执行的非结果集sql语句)<br>2.结果集    query(要执行的结果集sql语句))</p>
+<p>Exec返回影响的行数</p>
+<p>Query返回一个对象，并且该对象支持数组方式的遍历，遍历的结果返回一个关联和索引都有的结果数组</p>
+<p>如果不需要获取结果，去设置数据库的一些参数设定的时候，两个操作都是可以的</p>
+<p>如果在进行插入数据操作的时候，想获取最后插入的ID<br>使用 lastInsertId();</p>
+<p>PDO中的事务处理</p>
+<p>1.关闭自动提交<br>$pdo-&gt;setAttribute(PDO::ATTR_AUTOCOMMIT,0);<br>2.开启事务处理<br>$pdo-&gt;beginTransaction();<br>3.进行事务处理流程<br>环节出现问题抛出异常并执行回滚操作<br>throw new PDOException(“张三转账失败”);<br>$pdo-&gt;rollBack();<br>4.没有错误则确认提交<br>$pdo-&gt;commit();</p>
+<p>5.再次开启自动提交<br>$pdo-&gt;setAttribute(PDO::ATTR_AUTOCOMMIT,1);</p>
+<p>PDO中的预处理</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/tighub博客/">tighub博客</a>►<a class="article-category-link" href="/categories/tighub博客/博客搭建/">博客搭建</a>
+  <a class="article-category-link" href="/categories/oop-与-PDO/">oop 与 PDO</a>
 </div>
 
 
@@ -191,7 +155,7 @@ xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]； 
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://wsgzao.github.io/post/hello-world-md/" data-title="hexo在github的搭建 | 苏少莲博客" data-tsina="null" class="share clearfix">
+	  <div data-url="http://wsgzao.github.io/post/oop/" data-title="OOP的学习 | 苏少莲博客" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -205,27 +169,19 @@ xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]； 
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/post/mysql/" title="MYSQL的学习">
+ <a href="/post/hello-world-md/" title="hexo在github的搭建">
   <strong>上一篇：</strong><br/>
   <span>
-  MYSQL的学习</span>
+  hexo在github的搭建</span>
 </a>
 </div>
 
-
-<div class="next">
-<a href="/post/oop/"  title="OOP的学习">
- <strong>下一篇：</strong><br/> 
- <span>OOP的学习
-</span>
-</a>
-</div>
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/hello-world-md/" data-title="hexo在github的搭建" data-url="http://wsgzao.github.io/post/hello-world-md/"></div>
+	<div class="ds-thread" data-thread-key="post/oop/" data-title="OOP的学习" data-url="http://wsgzao.github.io/post/oop/"></div>
 </section>
 
 
@@ -235,7 +191,7 @@ xp:在[运行]中输入”services.msc”，确定后出现[服务管理器]； 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装node-js"><span class="toc-number">1.</span> <span class="toc-text">安装node.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打开Telent客户端（如果没打开会出错）"><span class="toc-number">2.</span> <span class="toc-text">打开Telent客户端（如果没打开会出错）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装git"><span class="toc-number">3.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SSH"><span class="toc-number">4.</span> <span class="toc-text">SSH</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装HEXO"><span class="toc-number">5.</span> <span class="toc-text">安装HEXO</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#建github库与推送"><span class="toc-number">6.</span> <span class="toc-text">建github库与推送</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#完成"><span class="toc-number">7.</span> <span class="toc-text">完成</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OOP的学习"><span class="toc-number">1.</span> <span class="toc-text">OOP的学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PDO"><span class="toc-number">2.</span> <span class="toc-text">PDO</span></a></li></ol>
  
   </div>
 
