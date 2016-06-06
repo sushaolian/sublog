@@ -28,7 +28,7 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
 但一个用户在请求一个页面以后再请求另一个页面时，需要让服务期知道这是一个用户。
 总共有3种数">
 <meta property="og:image" content="http://wsgzao.github.io/./MYSQL.png">
-<meta property="og:updated_time" content="2016-06-06T07:48:43.921Z">
+<meta property="og:updated_time" content="2016-06-06T07:52:07.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MYSQL的学习">
 <meta name="twitter:description" content="浓缩版
@@ -145,7 +145,7 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
     exprice        有效时间    设置cookie的过期时间和日期，用一个标准的Unix时间标记，可以用time()函数取得，以秒为单位.
     path        范围        服务器端的有效路径，设置为“/”表示这个域中所有数组都可以被访问读取。
     doma    n        域名        设定cookie有效域名
-    secure        指明cookie只能通过安全的https传送        设为true时只能使用安全的https，默认为false，即设置是否仅在https安全连接时才发送cookie到客户端，0或1。
+    secure    指明cookie只能通过安全的https传送设为true时只能使用安全的https，默认为false，即设置是否仅在https安全连接时才发送cookie到客户端，0或1。
 3.3  读取Cookie
     通过超全局数组 $_COOKIE
 3.4  数组形态的Cookie应用
@@ -173,7 +173,7 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
     session.name = PHPSESSID；      用在cookie里的session的名字 
     session.save_handler = files ;     用于保存/取回数据的控制方式 
     session.save_path = /tmp ;         在 save_handler 设为文件时传给控制器的参数， 这是数据文件将保存的路径. 
-    session.use_cookies = 1 ;             是否使用cookies 
+    session.use_cookies = 1 ; 是否使用cookies 
 4.3 Session的声明与使用
     session_start()   
     4.4 注册一个会话变量和读取Session
@@ -182,8 +182,8 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
     2.unset($_SESSION[‘键名’])    删除内存中由Session数组保存的变量        清除所有变量可以使用 $_SESSION=array()
     3.如果session是基于Cookie的，那么我们还需要删除客户端保留的cookie文件
 4.6 Session的自动回收机制
-    session.cookie_lifetime=0;     关                        闭浏览器相应的cookie文件即被删除
-    session.gc_maxlifetime;                                    设置过期session时间，默认1440秒（24分钟）
+    session.cookie_lifetime=0;     关        闭浏览器相应的cookie文件即被删除
+    session.gc_maxlifetime;                    设置过期session时间，默认1440秒（24分钟）
     session.gc_probability/session.gc_divisor;    启动垃圾回收机制的概率（建议值为1/1000～5000）
 4.7 传递Session ID
     1.通过Cookie传递Session ID
@@ -219,14 +219,14 @@ c1ntkpotvobalgq2l3c7rpjel5
 	
 <nav class="article-nav clearfix">
  
-
-<div class="next">
-<a href="/post/hello-world-md/"  title="hexo在github的搭建">
- <strong>下一篇：</strong><br/> 
- <span>hexo在github的搭建
-</span>
+ <div class="prev" >
+ <a href="/post/hello-world-md/" title="hexo在github的搭建">
+  <strong>上一篇：</strong><br/>
+  <span>
+  hexo在github的搭建</span>
 </a>
 </div>
+
 
 </nav>
 
