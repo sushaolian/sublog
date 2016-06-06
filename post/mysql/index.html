@@ -28,7 +28,7 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
 但一个用户在请求一个页面以后再请求另一个页面时，需要让服务期知道这是一个用户。
 总共有3种数">
 <meta property="og:image" content="http://wsgzao.github.io/./MYSQL.png">
-<meta property="og:updated_time" content="2016-06-06T07:42:55.421Z">
+<meta property="og:updated_time" content="2016-06-06T07:48:43.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MYSQL的学习">
 <meta name="twitter:description" content="浓缩版
@@ -174,8 +174,22 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
     session.save_handler = files ;     用于保存/取回数据的控制方式 
     session.save_path = /tmp ;         在 save_handler 设为文件时传给控制器的参数， 这是数据文件将保存的路径. 
     session.use_cookies = 1 ;             是否使用cookies 
-</code></pre><p>4.3 Session的声明与使用<br>        session_start()<br>4.4 注册一个会话变量和读取Session<br>4.5 注销变量与销毁Session<br>        1.session_destroy()                      删除服务器端保留session信息的文件<br>        2.unset($_SESSION[‘键名’])    删除内存中由Session数组保存的变量        清除所有变量可以使用 $_SESSION=array()<br>        3.如果session是基于Cookie的，那么我们还需要删除客户端保留的cookie文件<br>4.6 Session的自动回收机制<br>        session.cookie_lifetime=0;     关                        闭浏览器相应的cookie文件即被删除<br>        session.gc_maxlifetime;                                    设置过期session时间，默认1440秒（24分钟）<br>        session.gc_probability/session.gc_divisor;    启动垃圾回收机制的概率（建议值为1/1000～5000）<br>4.7 传递Session ID<br>        1.通过Cookie传递Session ID<br>        2.通过URL 传递Session ID<br>    c1ntkpotvobalgq2l3c7rpjel5</p>
-  
+4.3 Session的声明与使用
+    session_start()   
+    4.4 注册一个会话变量和读取Session
+   4.5 注销变量与销毁Session
+    1.session_destroy()                      删除服务器端保留session信息的文件
+    2.unset($_SESSION[‘键名’])    删除内存中由Session数组保存的变量        清除所有变量可以使用 $_SESSION=array()
+    3.如果session是基于Cookie的，那么我们还需要删除客户端保留的cookie文件
+4.6 Session的自动回收机制
+    session.cookie_lifetime=0;     关                        闭浏览器相应的cookie文件即被删除
+    session.gc_maxlifetime;                                    设置过期session时间，默认1440秒（24分钟）
+    session.gc_probability/session.gc_divisor;    启动垃圾回收机制的概率（建议值为1/1000～5000）
+4.7 传递Session ID
+    1.通过Cookie传递Session ID
+    2.通过URL 传递Session ID    
+c1ntkpotvobalgq2l3c7rpjel5
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -205,14 +219,14 @@ COOKIE_SESSION PHP会话控制1. 为什么使用会话技术“HTTP协议”是�
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/hello-world-md/" title="hexo在github的搭建">
-  <strong>上一篇：</strong><br/>
-  <span>
-  hexo在github的搭建</span>
+
+<div class="next">
+<a href="/post/hello-world-md/"  title="hexo在github的搭建">
+ <strong>下一篇：</strong><br/> 
+ <span>hexo在github的搭建
+</span>
 </a>
 </div>
-
 
 </nav>
 
